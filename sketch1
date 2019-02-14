@@ -1,0 +1,64 @@
+var x = 230;
+var y = 20;
+var x1= 40
+var col ={
+  r:0,
+  g:0,
+  b:255,}
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(240,200,80);
+  noStroke();
+
+  col.r=random(10,255,200);
+  col.g=random(80,30,40);
+  col.b=random(10,235,180);  
+    
+  // draw pipe 1
+  fill(col.r,0,200)
+  rect(0, y, x1, 20);
+  
+  // draw pipe 2
+  fill(col.r,col.g,200)
+  rect(80, y, x, 10);
+  
+  // draw pipe 3
+  fill(80,col.g,200)
+  rect(180, y, x, 20);
+
+
+   // draw drip 4
+  fill(30,185,col.b)
+  ellipse(60, y, 80);
+  
+  
+   // draw drip 4
+  fill(255,0,col.b)
+  ellipse(x, y, 200);
+  
+  
+  // draw drip 5
+  fill(155,col.g,100)
+  ellipse(230, y, 160);
+  
+  // draw drip 6
+  fill(col.r,col.g,255)
+  ellipse(230, y, 90);
+  
+  
+
+  // down 3 pixels each frame, but maybe should be accelerating?
+  y = y + 2
+  x = x-1
+ 
+
+  // if invisible for a full “height” amount…
+  if (y > height*2) {
+    // reset
+    y = 20;
+  }
+}
