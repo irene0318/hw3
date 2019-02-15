@@ -18,7 +18,8 @@
 
 
 
-
 Q1: Using the same syntax. For example, var=x, and drawing a ellipse should be (circle.x,circle.y,x2,y2)
-Q2: The range of RGB, width, or height.
-Q3: var year=(1901,2000) ;
+ 
+ Q2: The range of RGB, width, or height.
+  
+  Q3: var year=(1901,2000) ;
