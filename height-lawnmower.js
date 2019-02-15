@@ -18,10 +18,10 @@ function draw() {
     h = h + 3;
   }
 
-  if (random() > 0.999) {
+  if (h>=120) {
     fill(255);
     rect(0, 0, width, height-15);
-    h = 80;
+    h = 10;
   }
 
   fill(40, 100, 60);
