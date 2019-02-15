@@ -12,4 +12,4 @@
     
   Q3. It is the height of the glass.
   
-  Q4.
+  Q4. It determines the heigt of the glass.
